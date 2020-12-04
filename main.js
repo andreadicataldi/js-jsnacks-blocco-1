@@ -11,7 +11,7 @@
 console.log(palla); */
 
 //JSnack 2
-var biciDaCorsa = [
+/* var biciDaCorsa = [
   {
     nome: "Bianchi",
     peso: 8.9
@@ -25,14 +25,55 @@ var biciDaCorsa = [
     peso: 9.1
   }
 ];
-
 var pesoMinore = biciDaCorsa[0].peso;
-var piuLeggera;
 for(var i = 0; i < biciDaCorsa.length; i++) {
   if (biciDaCorsa[i].peso < pesoMinore) {
-    pesoMinore = biciDaCorsa[i].peso;
-    piuLeggera = i;
+    pesoMinore = biciDaCorsa[i];
   };
 };
-console.log(biciDaCorsa[piuLeggera]);
+console.log(pesoMinore); */
 
+//JSnack 3
+/* var triangolo = {
+  base: 10,
+  altezza: 10,
+};
+var area = (triangolo.base * triangolo.altezza) / 2;
+function pitagora(latoA, latoB) {
+  return Math.sqrt(Math.pow(latoA, 2) + Math.pow(latoB, 2));
+};
+var ipotenusa = pitagora(triangolo.base, triangolo.altezza);
+perimetro = triangolo.base + triangolo.altezza + ipotenusa;
+console.log(area);
+console.log(perimetro); */
+
+//JSnack 4A
+var squadre = [
+  {
+    nome: "Milan",
+    punti: 0,
+    falli: 0,
+  },
+  {
+    nome: "Juventus",
+    punti: 0,
+    falli: 0,
+  },
+  {
+    nome: "Napoli",
+    punti: 0,
+    falli: 0,
+  },
+  {
+    nome: "Inter",
+    punti: 0,
+    falli: 0,
+  },
+];
+
+//JSnack 4B
+squadre.forEach(function (item) {
+  item.punti = Math.floor(Math.random() * 10) + 1;
+  item.falli = Math.floor(Math.random() * 10) + 1;
+});
+console.log(squadre);
