@@ -1,3 +1,5 @@
+//JSnacks Blocco 4
+
 //JSnack 1A
 
 /* var palla = {
@@ -48,7 +50,7 @@ console.log(area);
 console.log(perimetro); */
 
 //JSnack 4A
-var squadre = [
+/* var squadre = [
   {
     nome: "Milan",
     punti: 0,
@@ -58,6 +60,7 @@ var squadre = [
     nome: "Juventus",
     punti: 0,
     falli: 0,
+    ladri: true,
   },
   {
     nome: "Napoli",
@@ -69,11 +72,72 @@ var squadre = [
     punti: 0,
     falli: 0,
   },
-];
+]; */
 
 //JSnack 4B
-squadre.forEach(function (item) {
-  item.punti = Math.floor(Math.random() * 10) + 1;
-  item.falli = Math.floor(Math.random() * 10) + 1;
+/* squadre.forEach(function (item) {
+  item.punti = Math.floor(Math.random() * 60) + 1;
+  item.falli = Math.floor(Math.random() * 40) + 1;
 });
-console.log(squadre);
+console.log(squadre); */
+
+//JSnacks Blocco 5
+
+//JSnack 1
+var zucchine = [
+  {
+    varietà: "nero di Milano",
+    peso: 2,
+    lunghezza: 10,
+  },
+  {
+    varietà: "romanesco",
+    peso: 3,
+    lunghezza: 9,
+  },
+  {
+    varietà: "lunga fiorentina",
+    peso: 4,
+    lunghezza: 12,
+  },
+  {
+    varietà: "siciliano",
+    peso: 3,
+    lunghezza: 15,
+  },
+  {
+    varietà: "striata di Napoli",
+    peso: 2,
+    lunghezza: 7,
+  },
+  {
+    varietà: "bianca triestina",
+    peso: 1,
+    lunghezza: 6,
+  },
+  {
+    varietà: "rigata pugliese",
+    peso: 2,
+    lunghezza: 7,
+  },
+  {
+    varietà: "tondo di Piacenza",
+    peso: 5,
+    lunghezza: 5,
+  },
+  {
+    varietà: "tondo di Nizza",
+    peso: 4,
+    lunghezza: 4,
+  },
+  {
+    varietà: "tondo di Firenze",
+    peso: 3,
+    lunghezza: 6,
+  },
+];
+var sum = 0;
+for (var i = 0; i < zucchine.length; i++) {
+  sum += zucchine[i].peso;
+}
+console.log(sum);
