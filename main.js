@@ -143,7 +143,80 @@ for (var i = 0; i < zucchine.length; i++) {
 console.log(sum); */
 
 //JSnack 2
-function invert(word) {
+/* function invert(word) {
   return word.split("").reverse().join("");
 }
-console.log(invert("Andrea"));
+console.log(invert("Andrea")); */
+
+//JSnack 3
+var zucchine = [
+  {
+    varietà: "nero di Milano",
+    peso: 2,
+    lunghezza: 16,
+  },
+  {
+    varietà: "romanesco",
+    peso: 3,
+    lunghezza: 14,
+  },
+  {
+    varietà: "lunga fiorentina",
+    peso: 4,
+    lunghezza: 17,
+  },
+  {
+    varietà: "siciliano",
+    peso: 3,
+    lunghezza: 20,
+  },
+  {
+    varietà: "striata di Napoli",
+    peso: 2,
+    lunghezza: 12,
+  },
+  {
+    varietà: "bianca triestina",
+    peso: 1,
+    lunghezza: 11,
+  },
+  {
+    varietà: "rigata pugliese",
+    peso: 2,
+    lunghezza: 12,
+  },
+  {
+    varietà: "tondo di Piacenza",
+    peso: 5,
+    lunghezza: 10,
+  },
+  {
+    varietà: "tondo di Nizza",
+    peso: 4,
+    lunghezza: 9,
+  },
+  {
+    varietà: "tondo di Firenze",
+    peso: 3,
+    lunghezza: 11,
+  },
+];
+var zucchineCorte = [];
+var zucchineLunghe = [];
+for (var i = 0; i < zucchine.length; i++) {
+  if (zucchine[i].lunghezza < 15) {
+    zucchineCorte.push(zucchine[i]);
+  } else if (zucchine[i].lunghezza > 15) {
+    zucchineLunghe.push(zucchine[i]);
+  }
+}
+var pesoZucchineCorte = 0;
+var pesoZucchineLunghe = 0;
+for (var i = 0; i < zucchineCorte.length; i++) {
+  pesoZucchineCorte += zucchineCorte[i].peso;
+};
+for (var i = 0; i < zucchineLunghe.length; i++) {
+  pesoZucchineLunghe += zucchineLunghe[i].peso;
+};
+console.log(pesoZucchineCorte);
+console.log(pesoZucchineLunghe);
