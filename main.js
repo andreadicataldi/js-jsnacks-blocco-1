@@ -84,7 +84,7 @@ console.log(squadre); */
 //JSnacks Blocco 5
 
 //JSnack 1
-var zucchine = [
+/* var zucchine = [
   {
     varietà: "nero di Milano",
     peso: 2,
@@ -140,4 +140,10 @@ var sum = 0;
 for (var i = 0; i < zucchine.length; i++) {
   sum += zucchine[i].peso;
 }
-console.log(sum);
+console.log(sum); */
+
+//JSnack 2
+function invert(word) {
+  return word.split("").reverse().join("");
+}
+console.log(invert("Andrea"));
