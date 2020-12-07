@@ -149,7 +149,7 @@ console.log(sum); */
 console.log(invert("Andrea")); */
 
 //JSnack 3
-var zucchine = [
+/* var zucchine = [
   {
     varietà: "nero di Milano",
     peso: 2,
@@ -214,9 +214,24 @@ var pesoZucchineCorte = 0;
 var pesoZucchineLunghe = 0;
 for (var i = 0; i < zucchineCorte.length; i++) {
   pesoZucchineCorte += zucchineCorte[i].peso;
-};
+}
 for (var i = 0; i < zucchineLunghe.length; i++) {
   pesoZucchineLunghe += zucchineLunghe[i].peso;
-};
+}
 console.log(pesoZucchineCorte);
-console.log(pesoZucchineLunghe);
+console.log(pesoZucchineLunghe); */
+
+//JSnack 4
+var arrayLettere = ["a", "b", "c"];
+var arrayNumeri = [1, 2, 3];
+
+function altArrays(arr1, arr2) {
+  var fusion = [];
+  for (var i = 0; i < arr1.length; i++) {
+    fusion.push(arr1[i]);
+    fusion.push(arr2[i]);
+  }
+  return fusion;
+}
+console.log(altArrays(arrayLettere, arrayNumeri));
+
