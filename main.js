@@ -222,7 +222,7 @@ console.log(pesoZucchineCorte);
 console.log(pesoZucchineLunghe); */
 
 //JSnack 4
-var arrayLettere = ["a", "b", "c"];
+/* var arrayLettere = ["a", "b", "c"];
 var arrayNumeri = [1, 2, 3];
 
 function altArrays(arr1, arr2) {
@@ -233,5 +233,18 @@ function altArrays(arr1, arr2) {
   }
   return fusion;
 }
-console.log(altArrays(arrayLettere, arrayNumeri));
+console.log(altArrays(arrayLettere, arrayNumeri)); */
+
+//JSnack 5
+var myArray = ["Milan", "Inter", "Juventus", "Roma", "Lazio", "Napoli"];
+function myVar(array, a, b) {
+  var newArray = [];
+  if (a < b && b <= array.length) {
+    for (var i = a; i < b; i++) {
+      newArray.push(array[i]);
+    }
+    return newArray;
+  }
+}
+console.log(myVar(myArray, 0, 3));
 
